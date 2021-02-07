@@ -1,0 +1,14 @@
+  <div class="row form-group">
+                  
+                  <div class="col-md-12">
+                  <label class="text-black" for="hp">Paket</label> 
+                  <select  class="form-control">
+                
+                        <?php
+                            foreach ($data->result() as $tabel){
+                                echo "<option value=".$tabel->kodejenis.">".$tabel->nama."</option>";
+                            }
+                        ?>
+                    </select>
+                  </div>
+                </div>
